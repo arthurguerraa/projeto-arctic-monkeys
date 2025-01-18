@@ -1,38 +1,94 @@
 @charset "UTF-8";
 
-body{
-    margin: 0;
-    padding: 0;
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --fonte1: "Bitter", serif; /* cabeçalho*/
+    --fonte2: Arial, Helvetica, sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+    font-family: var(--fonte2);
 }
 
 header{
     height: 200px;
     background-color: black;
     color: white;
-    padding-top: 50px;
 }
 
 header > h1{
     text-align: center; 
+    font-family: var(--fonte1);
+    font-size: 5vw;
+    padding-top: 40px;
+    margin: 0;
 }
 
 header > p{
     text-align: center;
 }
 
+header a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 nav{
-    padding-top: 50px;
+    margin-top: 10px;
 }
 
 nav a{
-    color: white;
+    color: black;
     text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
     padding-right: 10px;
     padding-left: 10px;
 }
 
+main{
+    margin-top: 10px;
+}
+
 section{
-    margin-left: 20px;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 50px;
+    font-size: 2vw;
+    line-height: 2em;
+}
+
+.imagem{
+    /* Efeito Paralax */
+    background-size: cover; /* faz com que uma imagem de fundo seja redimensionada de maneira que cubra completamente o elemento ao qual está aplicada, sem deixar áreas vazias. */
+    background-attachment: fixed; /* faz com que a imagem fique fixa na rolagem de tela*/
+    color: white;
+}
+
+section.imagem > p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.664);
+    font-weight: bold;
+    padding: 1em;
+}
+
+#img01{
+    background-image: url('../imagens/img01.jpg');
+}
+
+#img02{
+    background-image: url('../imagens/img02.jpg');
+    background-position: center center;
+    height: 50vw;
 }
 
 footer{
