@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+:root{
+    --fonte1: "Bitter", serif; /* cabeçalho*/
+    --fonte2: Arial, Helvetica, sans-serif;
+}
+
+main.sobre{
+    margin: auto;
+    min-width: 300px;
+    max-width: 1000px;
+    background-color: black;
+}
+
+main.sobre > article{
+    color: white;
+    font-family: var(--fonte2);
+}
+
+main.sobre > article > p{
+    text-align: justify;
+}
+
