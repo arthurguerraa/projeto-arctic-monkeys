@@ -55,6 +55,11 @@ nav a{
     padding-left: 10px;
 }
 
+nav a:hover{
+    color: white;
+    background-color: black;
+}
+
 main{
     margin-top: 10px;
 }
